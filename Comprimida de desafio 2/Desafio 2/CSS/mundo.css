@@ -8,7 +8,12 @@
     animation-name: titulo;
     animation-iteration-count: infinite;
 }
-
+@media screen and (max-width: 480px) {
+    #titulo{
+        float: none;
+        width: 100%;
+    }
+}
 @keyframes titulo {
     0%{
         opacity: 0;
@@ -29,6 +34,15 @@
     animation-name: titulo_1;
     animation-iteration-count: infinite;
 }
+ 
+/*Inicia el ajuste de pagina del titulo*/
+
+@media screen and (max-width: 480px) {
+    #titulo_1{
+        float: none;
+        width: 100%;
+    }
+}
 
 @keyframes titulo_1 {
     0%{
@@ -47,6 +61,13 @@
     
 }
 
+@media screen and (max-width: 480px) {
+    .Texto {
+        float: none;
+        width: 100%;
+    }
+}
+
 .Preguntas{
     border: 1px solid black;
     background-color: blanchedalmond;
@@ -56,6 +77,14 @@
     justify-content: center;
     
 }
+
+@media screen and (max-width: 480px) {
+    .Preguntas{
+        float: none;
+        width: 100%;
+    }
+}
+
 
 .Politicas{
     color: #f1c232;
@@ -79,7 +108,13 @@
     
 }
 
-
+@media screen and (max-width: 480px) {
+    .Formalidad{
+        float: none;
+        width: 100%;
+        background-color: #1155cc;
+    }
+}
 
 .Menu-1{
     background-color: slategray;
@@ -97,18 +132,3 @@
 
 }
 
-.arg{
-    background-image: linear-gradient(to left, white, deepskyblue);
-    animation-duration: 5s;
-    animation-name: SinContext;
-    animation-iteration-count: infinite;
-}
-
-@keyframes SinContext {
-    0%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
-}
